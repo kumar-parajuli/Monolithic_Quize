@@ -10,19 +10,17 @@ import lombok.Data;
 @Data
 @Entity
 public class Question {
-
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private  Integer id;
-    public String questionsTitle;
-    public String option1;
-    public String option2;
-    public String option3;
-    public String option4;
-    public String rightAnswer;
-    public String difficultylevel;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String questionsTitle;
+    private String option1;
+    private String option2;
+    private String option3;
+    private String option4;
+    private String rightAnswer;
+    private String difficultylevel;
+    private String category;
 
 
 }
